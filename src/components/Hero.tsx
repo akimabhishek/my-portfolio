@@ -40,8 +40,8 @@ export default function Hero() {
              <div className="text-sm lg:text-base font-bold tracking-[0.2em] text-[var(--accent-primary)] uppercase mb-3 glow-text">
                I'm Abhishek Kumar
              </div>
-             <p className="text-base lg:text-lg text-[var(--text-secondary)] font-light max-w-md leading-[1.6] border-t md:border-t-0 md:border-l-2 border-[var(--accent-primary)] pt-4 md:pt-1 md:pl-5">
-               Building AI-first products that turn data into decisions, from voice bots to predictive lead engines.
+             <p className="text-base lg:text-lg text-[var(--text-secondary)] font-light max-w-xl leading-[1.6] border-t md:border-t-0 md:border-l-2 border-[var(--accent-primary)] pt-4 md:pt-1 md:pl-5">
+               Product Manager with 5 years of expertise building intelligent systems for lead generation and agentic automation. Proven 0→1 success at Justdial shipping a comprehensive voice analysis pipeline, predictive lead-scoring models, and a board-level conversational AI bot PoC.
              </p>
            </motion.div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
              className="flex flex-wrap justify-center md:justify-start gap-4 lg:gap-6 pt-6"
            >
-             <a href="#experience" className="w-20 h-20 lg:w-[90px] lg:h-[90px] rounded-full glass-panel glass-panel-hover text-[var(--text-primary)] flex items-center justify-center text-[10px] lg:text-xs font-bold uppercase tracking-widest relative overflow-hidden group">
+             <a href="https://drive.google.com/file/d/1ueZA3ttZpNjI5Pw8Z6qwBsFztjONf8G3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-20 h-20 lg:w-[90px] lg:h-[90px] rounded-full glass-panel glass-panel-hover text-[var(--text-primary)] flex items-center justify-center text-[10px] lg:text-xs font-bold uppercase tracking-widest relative overflow-hidden group">
                <div className="absolute inset-0 bg-[var(--accent-primary)] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                <span className="relative z-10 group-hover:glow-text">Resume</span>
              </a>
