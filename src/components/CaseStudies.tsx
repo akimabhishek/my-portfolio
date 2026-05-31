@@ -148,7 +148,7 @@ export default function CaseStudies() {
         </motion.div>
 
         {/* Case Studies List */}
-        <div className="space-y-32 md:space-y-48">
+        <div className="space-y-16 md:space-y-24">
           {caseStudies.map((study, index) => {
             const isEven = index % 2 !== 0;
             return (
@@ -158,8 +158,9 @@ export default function CaseStudies() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.8 }}
-                className={`flex flex-col ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 lg:gap-20 group`}
+                className="flex flex-col gap-10 group"
               >
+                <div className={`flex flex-col ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 lg:gap-20`}>
                 {/* Visual Side */}
                 <div className="w-full md:w-1/2 relative">
                   <div className="relative w-full rounded-2xl overflow-hidden bg-[var(--text-primary)]/5 shadow-2xl transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:shadow-[var(--shadow-warm)] border border-[var(--text-primary)]/10 p-4 md:p-6 flex items-center justify-center">
@@ -205,9 +206,8 @@ export default function CaseStudies() {
                     {study.description}
                   </p>
 
-                  {/* Action Links & CTA */}
-                  <div className="w-full flex flex-row flex-wrap items-center gap-4 border-t border-[var(--text-primary)]/10 pt-8">
-                    
+                  {/* Action Links */}
+                  <div className="w-full flex flex-row flex-wrap items-center gap-4 border-t border-[var(--text-primary)]/10 pt-8 mt-auto">
                     {study.links?.demo && (
                       <a href={study.links.demo} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent-primary)] text-[var(--bg-primary)] rounded-full hover:bg-[var(--text-primary)] transition-all font-bold text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5">
                         <ExternalLink className="w-4 h-4" />
@@ -235,15 +235,16 @@ export default function CaseStudies() {
                         Doc
                       </a>
                     )}
-                    
-                    <div className="flex-1"></div>
-
-                    <button onClick={() => setActiveStudy(study)} className="inline-flex items-center gap-2 text-[var(--text-secondary)] hover:text-[var(--accent-primary)] font-bold text-sm tracking-wide uppercase group/btn transition-colors mt-2 sm:mt-0 ml-auto">
-                      Read Full Study
-                      <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
                   </div>
-
+                </div>
+                </div>
+                
+                {/* Centered Read Full Study Button at the bottom of the section */}
+                <div className="w-full flex justify-center pb-4">
+                  <button onClick={() => setActiveStudy(study)} className="inline-flex items-center justify-center gap-3 px-8 py-4 glass-panel glass-panel-hover text-[var(--text-primary)] font-bold text-[11px] tracking-[0.2em] uppercase rounded-full group/btn">
+                    <span className="relative z-10">Read Full Case</span>
+                    <ArrowRight className="w-4 h-4 relative z-10 transform group-hover/btn:translate-x-1 transition-transform text-[var(--accent-primary)]" />
+                  </button>
                 </div>
               </motion.div>
             );
