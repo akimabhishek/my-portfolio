@@ -33,7 +33,7 @@ const caseStudies = [
     primaryTag: 'Pydantic',
     image: '/images/Hierarchy.png',
     links: {
-      demo: 'https://chunking-intelligence-system.streamlit.app/',
+      demo: 'https://hierarchy-ranking.streamlit.app/',
       github: 'https://github.com/akimabhishek/chunking-intelligence-system',
       pdf: 'https://drive.google.com/file/d/1cn1Wbs67dAj629bzCUZbiL0WUog7_SEn/view?usp=sharing'
     },
